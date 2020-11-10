@@ -1,0 +1,28 @@
+1.请求转发和重定向的区别
+    @1、请求转发
+        > 一次请求
+        > 共享request域中的数据
+        > 可以转发到WEB_INFO目录下
+        > 不可以访问工程以外的资源
+    @2、重定向
+        > 两次请求
+        > 浏览器地址栏会发生变化
+        > 不共享request域中的数据
+        > 不能访问WEB-INFO下的资源
+        > 可以访问工程以外的资源
+
+2.cookie和session的区别
+    @1、存储位置不同
+        > cookie的数据信息存放在客户端浏览器上。
+        > session的数据信息存放在服务器上。
+
+    @2、存储容量不同
+        > 单个cookie保存的数据<=4KB，一个站点最多保存20个Cookie。
+        > 对于session来说并没有上限，但出于对服务器端的性能考虑，session内不要存放过多的东西，
+        并且设置session删除机制。
+
+    @3、有效期上不同
+        > 开发可以通过设置cookie的属性，达到使cookie长期有效的效果。
+        > session依赖于名为JSESSIONID的cookie，而cookie JSESSIONID的过期时间默认为-1，
+        只需关闭窗口该session就会失效，因而session不能达到长期有效的效果。
+

@@ -1,0 +1,4 @@
+1.String StringBuffer StringBuild 的区别
+    > string：不可变字符序列
+    > stringBuffer：可变字符序列、效率低、线程安全
+    > stringBuilder：可变字符序列、效率高、线程不安全

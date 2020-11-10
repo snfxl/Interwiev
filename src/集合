@@ -1,0 +1,15 @@
+1.ArrayList LinkedList vector区别
+    @1、ArrayList
+        > 作为List的主要实现类，线程不安全，效率高，
+        > 底层使用的是Object[] elementData进行存储 jdk8中第一次调用add()底层才创建长度为10的数据，
+        容量不足时，默认扩容为原来容量的1.5倍
+    @2、LinkedList
+        > 对于频繁的插入、删除操作使用此类效率比arrayList高，
+        底层使用双向链表进行存储
+    @3、vector
+        > 作为List接口的古老实现类，线程安全，但是效率低，
+        > 底层使用Object[] elementData进行存储 默认扩容为原来数组的长度两倍
+
+2.hashMap如何去重
+    > key 无序不可重复 通过调用hashCode()和equals()方法进行去重
+    > value 无序 可重复
