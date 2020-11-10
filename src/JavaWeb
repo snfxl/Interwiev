@@ -26,3 +26,7 @@
         > session依赖于名为JSESSIONID的cookie，而cookie JSESSIONID的过期时间默认为-1，
         只需关闭窗口该session就会失效，因而session不能达到长期有效的效果。
 
+3.三层架构
+    > 持久层 dao     与数据库进行交互
+    > 业务层 service 处理业务逻辑，调用dao层处理数据
+    > 视图展示层 web  与浏览器进行交互 并调用service层处理业务
